@@ -8,11 +8,13 @@
         <a @click.prevent="scrollToSection('projects')" href="#projects" class="nav-link">Projects</a>
         <a @click.prevent="scrollToSection('contact')" href="#contact" class="nav-link">Contact</a>
       </nav>
-      <a href="/assets/cv.pdf" download class="cv-button">
-        Download CV
-      </a>
     </div>
   </header>
+  
+  <a href="/assets/cv.pdf" download class="cv-button floating-cv">
+    <span class="vertical-text">Download CV</span>
+  </a>
+  
   <router-view/>
 </template>
 
@@ -77,7 +79,7 @@ html, body {
   justify-content: center;
   padding: 1rem;
   z-index: 1000;
-  pointer-events: none; /* This ensures clicks pass through the header container */
+  pointer-events: none;
 }
 
 .nav-container {
@@ -85,9 +87,8 @@ html, body {
   padding: 1rem 2rem;
   border-radius: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   pointer-events: auto;
   backdrop-filter: blur(10px);
@@ -130,11 +131,32 @@ nav {
   box-shadow: 0 4px 15px rgba(66, 185, 131, 0.3);
 }
 
+.floating-cv {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  z-index: 1000;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 2rem 1rem;
+  border-radius: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 15px rgba(66, 185, 131, 0.3);
+}
+
+.vertical-text {
+  transform: rotate(180deg);
+  white-space: nowrap;
+}
+
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
     border-radius: 25px;
     padding: 1rem;
+    width: 90%;
   }
 
   nav {
@@ -146,6 +168,21 @@ nav {
   .nav-link {
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
+  }
+
+  .floating-cv {
+    writing-mode: horizontal-tb;
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    top: auto;
+    transform: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+  }
+
+  .vertical-text {
+    transform: none;
   }
 }
 </style>
