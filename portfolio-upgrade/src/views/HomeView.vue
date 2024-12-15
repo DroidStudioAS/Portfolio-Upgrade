@@ -564,11 +564,12 @@ export default {
   padding: 0 2rem;
   max-width: 1800px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .project-card {
-  flex: 0 0 calc(33.333% - 1.35rem);
-  min-width: 380px;
+  width: calc(33.333% - 1.35rem);
+  min-width: 300px;
   background-color: var(--secondary-dark);
   border-radius: 15px;
   overflow: hidden;
@@ -740,15 +741,46 @@ export default {
 
 @media (max-width: 1400px) {
   .project-card {
-    flex: 0 0 calc(50% - 1rem);
-    min-width: 360px;
+    width: calc(50% - 1rem);
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0; /* Remove horizontal padding on sections */
+  }
+
+  .projects-grid {
+    padding: 0;
+    gap: 1rem;
+  }
+  
   .project-card {
-    flex: 0 0 100%;
+    width: calc(100% - 2rem); /* Account for left and right margin */
     min-width: unset;
+    margin: 0 1rem; /* Add horizontal margin instead of padding */
+  }
+
+  .project-categories {
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .project-info {
+    padding: 1.5rem;
   }
 }
 
