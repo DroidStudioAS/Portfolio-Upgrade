@@ -336,6 +336,15 @@ export default {
       ]
     }
   },
+  async mounted() {
+    try {
+      const response = await fetch('https://portfolio-backend-production-119c.up.railway.app/api/success/');
+      const data = await response.json();
+      console.log('API Response:', data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  },
   computed: {
     filteredProjects() {
       const filtered = this.currentCategory === 'all' 
