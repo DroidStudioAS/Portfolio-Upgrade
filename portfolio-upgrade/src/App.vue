@@ -31,6 +31,10 @@ export default {
 
 <style>
 /* CSS Reset */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
