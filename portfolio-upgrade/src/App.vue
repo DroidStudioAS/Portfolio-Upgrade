@@ -1,12 +1,18 @@
 <template>
   <header class="fixed-header">
-    <div class="nav-container">
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" @click="toggleMenu" aria-label="Toggle menu">
+      <span class="hamburger" :class="{ 'is-active': isMenuOpen }"></span>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <div class="nav-container" :class="{ 'mobile': isMenuOpen }">
       <nav>
-        <a @click.prevent="scrollToSection('home')" href="#home" class="nav-link">Home</a>
-        <a @click.prevent="scrollToSection('experience')" href="#experience" class="nav-link">Experience</a>
-        <a @click.prevent="scrollToSection('skills')" href="#skills" class="nav-link">Skills</a>
-        <a @click.prevent="scrollToSection('projects')" href="#projects" class="nav-link">Projects</a>
-        <a @click.prevent="scrollToSection('contact')" href="#contact" class="nav-link">Contact</a>
+        <a @click.prevent="scrollToSectionAndCloseMenu('home')" href="#home" class="nav-link">Home</a>
+        <a @click.prevent="scrollToSectionAndCloseMenu('experience')" href="#experience" class="nav-link">Experience</a>
+        <a @click.prevent="scrollToSectionAndCloseMenu('skills')" href="#skills" class="nav-link">Skills</a>
+        <a @click.prevent="scrollToSectionAndCloseMenu('projects')" href="#projects" class="nav-link">Projects</a>
+        <a @click.prevent="scrollToSectionAndCloseMenu('contact')" href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
@@ -20,12 +26,26 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isMenuOpen: false
+    }
+  },
   methods: {
     scrollToSection(sectionId) {
       const element = document.getElementById(sectionId)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen
+      document.body.style.overflow = this.isMenuOpen ? 'hidden' : 'auto'
+    },
+    scrollToSectionAndCloseMenu(sectionId) {
+      this.scrollToSection(sectionId)
+      this.isMenuOpen = false
+      document.body.style.overflow = 'auto'
     }
   }
 }
@@ -151,23 +171,95 @@ nav {
   white-space: nowrap;
 }
 
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  pointer-events: auto;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text-light);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+.hamburger.is-active {
+  background: transparent;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.is-active::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
 @media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
   .nav-container {
-    flex-direction: column;
-    border-radius: 25px;
-    padding: 1rem;
-    width: 90%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(10, 10, 10, 0.98);
+    padding: 4rem 1rem;
+    border-radius: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .nav-container.mobile {
+    display: flex;
   }
 
   nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   .nav-link {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
   }
 
   .floating-cv {
@@ -179,6 +271,7 @@ nav {
     transform: none;
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
+    z-index: 1002; /* Ensure it's above the mobile menu */
   }
 
   .vertical-text {
