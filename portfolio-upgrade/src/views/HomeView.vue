@@ -455,16 +455,88 @@ export default {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
+  padding-left: 3rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--accent-color);
+  box-shadow: 
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color),
+    0 0 30px var(--accent-color);
+  opacity: 0.8;
+  border-radius: 3px;
 }
 
 .timeline-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background-color: var(--secondary-dark);
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background-color: rgba(18, 18, 18, 0.8);
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--text-light);
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.35rem;
+  top: 2rem;
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color),
+    0 0 30px var(--accent-color);
+  z-index: 2;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -1.8rem;
+  top: 2.4rem;
+  width: 1.8rem;
+  height: 2px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.timeline-content {
+  position: relative;
+}
+
+.timeline-content h3 {
+  color: var(--accent-color);
+  text-shadow: 0 0 10px rgba(66, 185, 131, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    left: -1.85rem;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-item::after {
+    left: -1.3rem;
+    width: 1.3rem;
+  }
 }
 
 /* Skills styles */
