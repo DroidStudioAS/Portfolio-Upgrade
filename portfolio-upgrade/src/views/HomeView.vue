@@ -8,9 +8,8 @@
         <p class="title">Software Developer </p>
         <a @click.prevent="scrollToSection('experience')" href="#experience" class="cta-button">MORE ABOUT ME</a>
         <div class="social-links">
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+          <a href="https://github.com/DroidStudioAS" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aleksandar-smiljanic-335a8a23a" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
     </section>
