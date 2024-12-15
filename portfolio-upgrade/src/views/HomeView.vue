@@ -262,7 +262,7 @@ export default {
           name: 'Litteraworks',
           type: 'Website',
           category: 'professional',
-          image: '/placeholder.jpg',
+          image: '/images/litteraworks-interface.png',
           shortDescription: 'AI-powered tool for transcription, subtitle generation, and text-to-speech conversion',
           fullDescription: 'Litteraworks is a comprehensive AI platform that provides automated solutions for transcription, subtitle generation, and text-to-speech conversion. The platform is designed to handle various media formats and deliver high-quality output for professional use.',
           techStack: ['Laravel', 'Python', 'Flask', 'Django', 'AI/ML', 'RESTful APIs'],
@@ -277,7 +277,7 @@ export default {
           name: 'FK Partizan Website',
           type: 'Website',
           category: 'professional',
-          image: '/placeholder.jpg',
+          image: '/images/partizan-interface.png',
           shortDescription: 'Statistics API for one of Serbia\'s largest football clubs',
           fullDescription: 'Developed a comprehensive statistics API for FK Partizan, one of Serbia\'s premier football clubs. The API provides detailed statistical data including league standings, team performance metrics, and individual player statistics for each match.',
           techStack: ['Laravel', 'MySQL', 'RESTful APIs', 'PHP'],
@@ -292,7 +292,7 @@ export default {
           name: 'mPanel',
           type: 'Website',
           category: 'professional',
-          image: '/placeholder.jpg',
+          image: '/images/mpanel-interface.png',
           shortDescription: 'Internal CMS system with AI capabilities for mobile app creation',
           fullDescription: 'mPanel is a sophisticated CMS system used globally by clients to create custom mobile applications. The system incorporates advanced AI functionalities for content management and optimization, making it a powerful tool for mobile app development.',
           techStack: ['Laravel', 'Blade', 'AI/ML', 'PHP', 'RESTful APIs', 'MySQL'],
@@ -307,7 +307,7 @@ export default {
           name: 'ITMentorstva Website',
           type: 'Website',
           category: 'professional',
-          image: '/placeholder.jpg',
+          image: '/images/itm-interface.png',
           shortDescription: 'Online programming school platform with advanced user tracking',
           fullDescription: 'Promotional website for an online programming school featuring comprehensive user activity tracking, email marketing integration, and dynamic feature implementation. The platform helps connect students with programming education opportunities.',
           techStack: ['Laravel', 'MySQL', 'Email Marketing', 'Analytics', 'User Tracking', 'PHP'],
@@ -322,7 +322,7 @@ export default {
           name: 'CommentaScript',
           type: 'Website',
           category: 'personal',
-          image: '/placeholder.jpg',
+          image: '/images/commenta-interface.png',
           shortDescription: 'AI-powered automated sports commentary and highlight generation system',
           fullDescription: 'CommentaScript is an innovative AI tool designed to automatically create text broadcasts of sports matches. The system generates real-time play-by-play descriptions, calculates precise timing of events, and automatically creates highlight videos from match footage.',
           techStack: ['Laravel', 'Python', 'AI/ML', 'RESTful APIs', 'MySQL'],
@@ -388,11 +388,30 @@ export default {
   background-color: var(--primary-dark);
   color: var(--text-light);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 47%, var(--accent-color) 48%, var(--accent-color) 52%, transparent 53%) 0 0/50px 50px,
+    linear-gradient(-45deg, transparent 47%, var(--accent-color) 48%, var(--accent-color) 52%, transparent 53%) 0 0/50px 50px;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .hello-text {
