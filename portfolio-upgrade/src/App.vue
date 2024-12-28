@@ -17,7 +17,7 @@
     </div>
   </header>
   
-  <a href="/assets/cv.pdf" download class="cv-button floating-cv">
+  <a href="/my_cv.pdf" download class="cv-button floating-cv">
     <span class="vertical-text">Download CV</span>
   </a>
   
