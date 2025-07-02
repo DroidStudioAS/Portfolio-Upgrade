@@ -20,65 +20,41 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-content">
-            <h3>Junior Backend Developer</h3>
-            <p class="company">AppWorks</p>
-            <p class="period">2024</p>
+            <h3>Software Developer</h3>
+            <p class="company">AppWorks, Belgrade</p>
+            <p class="period">2023 - Present</p>
             <ul class="experience-list">
-              <li>Built robust backends for live applications using Laravel, ensuring scalability and smooth performance.</li>
-              <li>Developed Python middleware with Flask and Django, optimizing real-time functionality for dynamic systems.</li>
-              <li>Prepared datasets for AI, cleaning and organizing data to enhance model accuracy and efficiency.</li>
-              <li>Trained AI models, leveraging advanced techniques to improve speech recognition and system intelligence.</li>
+              <li>Developed robust backend systems for leading Serbian clients using Laravel, Flask, and FastAPI.</li>
+              <li>Built and launched AI-first products, including transcription tools and custom-trained models.</li>
+              <li>Integrated AI features into legacy systems, improving automation and efficiency.</li>
+              <li>Designed and maintained system architecture across all projects, ensuring clean, scalable codebases.</li>
             </ul>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-content">
-            <h3>Full-Stack Software Developer (Intern)</h3>
-            <p class="company">ITMentorstva</p>
-            <p class="period">2024</p>
+            <h3>Software Developer</h3>
+            <p class="company">ITMentorstva, Remote</p>
+            <p class="period">2021-2023</p>
             <ul class="experience-list">
-              <li>Enhanced the functional platform frontend and backend.</li>
-              <li>Implemented new backend features, including email campaigns, special offers, and pop-ups.</li>
-              <li>Optimized the user panel for improved user experience.</li>
+              <li>Developed backend systems using Laravel, with a focus on SOLID principles and performance.</li>
+              <li>Designed and deployed relational database schemas to support scalable application logic.</li>
+              <li>Maintained and improved existing codebases across multiple production environments.</li>
+              <li>Contributed to one of Serbia's leading educational platforms, delivering stable and user-focused backend solutions.</li>
             </ul>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-content">
-            <h3>FQA Technician</h3>
-            <p class="company">Testronic Labs</p>
-            <p class="period">2024</p>
+            <h3>Software Developer - Intern</h3>
+            <p class="company">Enon Solution, Belgrade</p>
+            <p class="period">2020-2021</p>
             <ul class="experience-list">
-              <li>Followed test plans to ensure an excellent user experience.</li>
-              <li>Utilized Jira for bug reporting, ticket management, and task tracking.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>QA Tester</h3>
-            <p class="company">TestIO</p>
-            <p class="period">2023-2024</p>
-            <ul class="experience-list">
-              <li>Conducting manual bug reproductions on clients' websites and mobile apps to ensure a seamless User Experience.</li>
-              <li>Providing usability suggestions to enhance feature implementation and maximize functionality.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>Full-Stack Software Developer (Intern)</h3>
-            <p class="company">Enon Solutions</p>
-            <p class="period">2021-2022</p>
-            <ul class="experience-list">
-              <li>Designed and developed a 2D game using Vue.js in a team environment.</li>
-              <li>Spearheaded the creation of game mechanics and systems, demonstrating a strong grasp of game design principles while ensuring seamless functionality and user engagement.</li>
-              <li>Mastered the end-to-end process, including the design and implementation of the backend API and MySQL database, enabling data-driven gameplay and seamless user experiences.</li>
-              <li>Crafted custom animations and enhanced the frontend to create an immersive gaming experience.</li>
+              <li>Built web applications using Vue.js and Node.js as part of a full-stack workflow.</li>
+              <li>Gained hands-on experience with relational databases and data modeling.</li>
+              <li>Explored fundamentals of 2D animations.</li>
             </ul>
           </div>
         </div>
@@ -97,11 +73,19 @@
             </div>
             <div class="skill-item">
               <i class="fab fa-python"></i>
-              <span>Python (Flask/Django)</span>
+              <span>Flask</span>
             </div>
             <div class="skill-item">
-              <i class="fab fa-vuejs"></i>
-              <span>Vue.JS</span>
+              <i class="fab fa-python"></i>
+              <span>Django</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-rocket"></i>
+              <span>FastAPI</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>NodeJS</span>
             </div>
             <div class="skill-item">
               <i class="fab fa-java"></i>
@@ -109,19 +93,15 @@
             </div>
             <div class="skill-item">
               <i class="fas fa-database"></i>
-              <span>SQL</span>
+              <span>MySQL</span>
             </div>
             <div class="skill-item">
-              <i class="fab fa-html5"></i>
-              <span>HTML/CSS</span>
+              <i class="fab fa-vuejs"></i>
+              <span>Vue.JS</span>
             </div>
             <div class="skill-item">
-              <i class="fab fa-js"></i>
-              <span>jQuery</span>
-            </div>
-            <div class="skill-item">
-              <i class="fas fa-book-reader"></i>
-              <span>Jupyter Notebooks</span>
+              <i class="fas fa-leaf"></i>
+              <span>MongoDB</span>
             </div>
           </div>
         </div>
