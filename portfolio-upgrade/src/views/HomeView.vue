@@ -273,49 +273,19 @@ export default {
           sortOrder: 1
         }),
         new Project({
-          name: 'FK Partizan Website',
-          type: 'Website',
+          name: 'Moderator',
+          type: 'Web Application',
           category: 'professional',
-          image: '/images/partizan-interface.png',
-          shortDescription: 'Statistics API for one of Serbia\'s largest football clubs',
-          fullDescription: 'Developed a comprehensive statistics API for FK Partizan, one of Serbia\'s premier football clubs. The API provides detailed statistical data including league standings, team performance metrics, and individual player statistics for each match.',
-          techStack: ['Laravel', 'MySQL', 'RESTful APIs', 'PHP'],
-          role: 'Developed the statistics API that powers the club\'s website, implementing endpoints for fetching detailed match statistics, team performance data, and player metrics. Created a robust database structure to handle complex sports statistics and real-time data updates.',
-          onGithub: false,
-          isLive: true,
-          githubUrl: '',
-          liveUrl: 'https://partizan.rs/sr',
-          sortOrder: 2
-        }),
-        new Project({
-          name: 'mPanel',
-          type: 'Website',
-          category: 'professional',
-          image: '/images/mpanel-interface.png',
-          shortDescription: 'Internal CMS system with AI capabilities for mobile app creation',
-          fullDescription: 'mPanel is a sophisticated CMS system used globally by clients to create custom mobile applications. The system incorporates advanced AI functionalities for content management and optimization, making it a powerful tool for mobile app development.',
-          techStack: ['Laravel', 'Blade', 'AI/ML', 'PHP', 'RESTful APIs', 'MySQL'],
-          role: 'Enhanced the system with AI capabilities including automatic article translation, SEO recommendations, and AI-powered social media post generation. Developed custom blocks using the Blade templating system and architected new project features to expand system functionality.',
+          image: '/images/moderator_interface.jpg',
+          shortDescription: 'AI-powered comment moderation system with machine learning and customizable criteria',
+          fullDescription: 'Developing a comprehensive comment moderation platform that leverages AI and machine learning to provide customizable content filtering solutions. The system features adaptive learning algorithms that improve over time based on client-specific criteria and keyword patterns, offering both single comment testing and bulk processing capabilities with advanced column mapping features.',
+          techStack: ['Flask', 'AI/ML', 'Machine Learning', 'Data Processing', 'RESTful APIs', 'Vue.js', 'MySQL'],
+          role: 'Responsible for the complete full-stack development of this innovative moderation system. Architected both frontend and backend components, implemented machine learning algorithms for adaptive keyword detection, designed the bulk upload system with column mapping functionality, and created a flexible framework that allows clients to define custom moderation criteria that evolve and improve based on usage patterns.',
           onGithub: false,
           isLive: false,
           githubUrl: '',
           liveUrl: '',
-          sortOrder: 3
-        }),
-        new Project({
-          name: 'ITMentorstva Website',
-          type: 'Website',
-          category: 'professional',
-          image: '/images/itm-interface.png',
-          shortDescription: 'Online programming school platform with advanced user tracking',
-          fullDescription: 'Promotional website for an online programming school featuring comprehensive user activity tracking, email marketing integration, and dynamic feature implementation. The platform helps connect students with programming education opportunities.',
-          techStack: ['Laravel', 'MySQL', 'Email Marketing', 'Analytics', 'User Tracking', 'PHP'],
-          role: 'Implemented a sophisticated user activity tracking system, set up email marketing campaigns, and architected new website features. Focused on improving user engagement and conversion through data-driven development.',
-          onGithub: false,
-          isLive: true,
-          githubUrl: '',
-          liveUrl: 'https://itmentorstva.com/',
-          sortOrder: 4
+          sortOrder: 2
         }),
         new Project({
           name: 'CommentaScript',
@@ -330,9 +300,128 @@ export default {
           isLive: false,
           githubUrl: '',
           liveUrl: '',
+          sortOrder: 3
+        }),
+        new Project({
+          name: 'mPanel',
+          type: 'Website',
+          category: 'professional',
+          image: '/images/mpanel-interface.png',
+          shortDescription: 'Internal CMS system with AI capabilities for mobile app creation',
+          fullDescription: 'mPanel is a sophisticated CMS system used globally by clients to create custom mobile applications. The system incorporates advanced AI functionalities for content management and optimization, making it a powerful tool for mobile app development.',
+          techStack: ['Laravel', 'Blade', 'AI/ML', 'PHP', 'RESTful APIs', 'MySQL'],
+          role: 'Enhanced the system with AI capabilities including automatic article translation, SEO recommendations, and AI-powered social media post generation. Developed custom blocks using the Blade templating system and architected new project features to expand system functionality.',
+          onGithub: false,
+          isLive: false,
+          githubUrl: '',
+          liveUrl: '',
+          sortOrder: 4
+        }),
+        new Project({
+          name: 'McDonald\'s Serbia & Croatia',
+          type: 'Mobile App',
+          category: 'professional',
+          image: '/images/mcd_interface.jpg',
+          shortDescription: 'Seasonal promotional games and reward systems for McDonald\'s mobile application',
+          fullDescription: 'Developed comprehensive seasonal giveaway and reward game systems for McDonald\'s mobile applications in Serbia and Croatia markets. Working as an external contractor, I created engaging promotional mechanics that enhanced customer retention and brand engagement through interactive gaming experiences and reward distribution systems.',
+          techStack: ['Laravel', 'Game Development', 'Reward Systems', 'RESTful APIs', 'MySQL', 'Mobile Integration'],
+          role: 'As an external contractor, I architected and developed seasonal promotional game mechanics and reward systems using Laravel. Created robust backend infrastructure to handle high-traffic promotional events, implemented secure reward distribution algorithms, and ensured seamless integration with McDonald\'s existing mobile application ecosystem across Serbian and Croatian markets.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp&hl=en',
           sortOrder: 5
         }),
-        // Rest of the projects with default sort order (999)
+        new Project({
+          name: 'Politika Prodavnica',
+          type: 'Mobile App',
+          category: 'professional',
+          image: '/images/politika_interface.jpg',
+          shortDescription: 'Mobile newspaper app with advanced PDF manipulation and e-commerce backend',
+          fullDescription: 'Developed the complete backend infrastructure for Politika Prodavnica, a mobile application that enables users to purchase and read digital editions of Serbia\'s oldest newspaper. The system features advanced PDF manipulation capabilities with custom link insertion, comprehensive e-commerce functionality, and seamless integration with mobile platforms.',
+          techStack: ['Laravel', 'Python', 'PDF Manipulation', 'E-commerce', 'RESTful APIs', 'MySQL'],
+          role: 'Implemented the entire backend system using Laravel for handling digital newspaper purchases and user management. Developed sophisticated Python logic for PDF manipulation, creating dynamic marked areas with custom internal and external links that meet specific client requirements. Architected the e-commerce infrastructure to support subscription models and individual issue purchases.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://play.google.com/store/apps/details?id=io.mediaworks.android.politikaProdavnica&hl=sr',
+          sortOrder: 6
+        }),
+        new Project({
+          name: 'Insajder',
+          type: 'Website',
+          category: 'professional',
+          image: '/images/insajder_interface.jpg',
+          shortDescription: 'Large-scale database migration and dual API architecture for news platform',
+          fullDescription: 'Executed a comprehensive database migration project for Insajder, involving the modification and integration of an existing database schema containing 66,000 articles into our system architecture. Developed a robust dual API solution supporting both REST and GraphQL endpoints to provide flexible data access for frontend teams across multiple platforms.',
+          techStack: ['Laravel', 'RESTful APIs', 'GraphQL', 'PostgreSQL', 'MySQL', 'Database Migration', 'PHP'],
+          role: 'Led the complete database schema modification and migration process, successfully integrating 66,000 existing articles into our platform architecture. Designed and implemented comprehensive REST and GraphQL APIs using Laravel, ensuring seamless data access and optimal performance for frontend integration. Managed complex database operations across PostgreSQL and MySQL systems while maintaining data integrity throughout the migration process.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://insajder.net/',
+          sortOrder: 7
+        }),
+        new Project({
+          name: 'Teletext Generator',
+          type: 'Web Application',
+          category: 'personal',
+          image: '/images/teletext_interface.jpg',
+          shortDescription: 'Automated teletext article generation from URLs and text input with multiple format variations',
+          fullDescription: 'Developing an innovative web application that automates the creation of teletext articles from various input sources. The system can process both URLs and pasted text content, transforming them into properly formatted teletext articles with different stylistic variations. This tool streamlines the traditionally manual process of teletext content creation for broadcasting and digital media applications.',
+          techStack: ['Python', 'Vue.js', 'Content Processing', 'Web Scraping', 'Text Analysis', 'RESTful APIs'],
+          role: 'Designed and developed the complete full-stack application from concept to implementation. Built the Vue.js frontend interface for intuitive user interaction and content input, while developing the Python backend to handle URL processing, content extraction, text analysis, and teletext formatting algorithms. Implemented multiple generation variations to provide flexible output options for different teletext broadcasting requirements.',
+          onGithub: false,
+          isLive: false,
+          githubUrl: '',
+          liveUrl: '',
+          sortOrder: 8
+        }),
+        new Project({
+          name: 'FK Partizan Website',
+          type: 'Website',
+          category: 'professional',
+          image: '/images/partizan-interface.png',
+          shortDescription: 'Statistics API for one of Serbia\'s largest football clubs',
+          fullDescription: 'Developed a comprehensive statistics API for FK Partizan, one of Serbia\'s premier football clubs. The API provides detailed statistical data including league standings, team performance metrics, and individual player statistics for each match.',
+          techStack: ['Laravel', 'MySQL', 'RESTful APIs', 'PHP'],
+          role: 'Developed the statistics API that powers the club\'s website, implementing endpoints for fetching detailed match statistics, team performance data, and player metrics. Created a robust database structure to handle complex sports statistics and real-time data updates.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://partizan.rs/sr',
+          sortOrder: 9
+        }),
+        new Project({
+          name: 'Futsal Club Partizan',
+          type: 'Website',
+          category: 'professional',
+          image: '/images/fts_partizan.jpg',
+          shortDescription: 'Complete REST API development for futsal club frontend integration',
+          fullDescription: 'Developed a comprehensive REST API using Laravel to power the frontend of Futsal Club Partizan\'s website. The API handles all backend operations including team management, match scheduling, player statistics, and administrative functions, providing seamless data integration for the club\'s digital presence.',
+          techStack: ['Laravel', 'RESTful APIs', 'PHP', 'MySQL', "VueJS"],
+          role: 'Architected and developed the entire REST API backend using Laravel, creating robust endpoints for frontend integration. Implemented comprehensive data management systems for team operations, match scheduling, and player statistics while ensuring optimal performance and scalability.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://www.futsalklubpartizan.rs/sr',
+          sortOrder: 10
+        }),
+        new Project({
+          name: 'ITMentorstva Website',
+          type: 'Website',
+          category: 'professional',
+          image: '/images/itm-interface.png',
+          shortDescription: 'Online programming school platform with advanced user tracking',
+          fullDescription: 'Promotional website for an online programming school featuring comprehensive user activity tracking, email marketing integration, and dynamic feature implementation. The platform helps connect students with programming education opportunities.',
+          techStack: ['Laravel', 'MySQL', 'Email Marketing', 'Analytics', 'User Tracking', 'PHP'],
+          role: 'Implemented a sophisticated user activity tracking system, set up email marketing campaigns, and architected new website features. Focused on improving user engagement and conversion through data-driven development.',
+          onGithub: false,
+          isLive: true,
+          githubUrl: '',
+          liveUrl: 'https://itmentorstva.com/',
+          sortOrder: 11
+        }),
       ]
     }
   },
@@ -705,6 +794,10 @@ export default {
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .project-info p {
